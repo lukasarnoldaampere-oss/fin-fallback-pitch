@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aampere Funnel · FIN-Eingabe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="funnel-page">
+
+<header class="funnel-header">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.5 2L4 14h6l-1.5 8L20 10h-6l-0.5-8z" fill="#26D9A8"/>
+    </svg>
+    <span>Aampere</span>
+  </a>
+</header>
+
+<div class="progress-bar"><div class="progress-bar-fill" style="width: 75%;"></div></div>
+
+<main class="funnel-stage">
+  <div class="card">
+    <h1 class="card-title">Wie lautet die <strong>FIN</strong> deines Autos?</h1>
+    <p class="card-sub">Das ist die <strong>Fahrzeugidentifikationsnummer</strong>. Damit erkennen wir dein Fahrzeugmodell und deine Ausstattung.</p>
+
+    <div class="input-block">
+      <input type="text" class="input-funnel" placeholder="z.B. 1G1BC4E789F123456" maxlength="17">
+      <div class="input-meta">0/17 Zeichen</div>
+    </div>
+
+    <div class="help-callout">
+      <p>Du findest die FIN auf deinem Fahrzeugschein unter dem Buchstaben <strong>E</strong>.</p>
+      <div class="fahrzeugschein-mock">
+        <div class="row"><span class="label">B</span><span>04.03.2022    2.1 1480    2.2 AAS00199    2</span></div>
+        <div class="row"><span class="label">J</span><span>M1    4    AA</span></div>
+        <div class="row fin-row"><span class="label">E</span><span>LVW3E9BLWKC497955    3   6<span class="fin-circle"></span></span></div>
+        <div class="row"><span class="label">U</span><span>TESLA</span></div>
+        <div class="row"><span class="label">003</span><span></span></div>
+        <div class="row"><span class="label">D.1</span><span>E3LD</span></div>
+      </div>
+      <p>Fahrzeugschein nicht zur Hand?</p>
+      <a href="#" class="help-link">
+        <span>Wo finde ich die FIN noch?</span>
+        <span class="q-icon">?</span>
+      </a>
+    </div>
+
+    <!-- NEW SECONDARY ACTION: "FIN nicht zur Hand" Button -->
+    <a href="phone-capture.html?from=funnel" class="btn-secondary-fallback">
+      <svg class="wa-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.95.57 3.81 1.61 5.39L2 22l4.84-1.71c1.5.84 3.21 1.28 4.99 1.28h.04c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.81 14.04c-.24.67-1.38 1.28-1.93 1.36-.51.07-1.13.1-1.83-.12-.42-.13-.97-.31-1.66-.61-2.93-1.27-4.85-4.21-4.99-4.41-.15-.2-1.2-1.6-1.2-3.06s.77-2.18 1.04-2.47c.27-.3.59-.37.79-.37.2 0 .39 0 .57.01.18.01.43-.07.67.51.24.59.83 2.04.91 2.19.07.15.12.32.02.52-.1.2-.15.32-.3.49-.15.17-.32.39-.45.52-.15.15-.31.32-.13.62.17.3.78 1.29 1.68 2.09 1.16 1.03 2.13 1.36 2.43 1.51.3.15.48.13.66-.08.18-.2.76-.89.96-1.19.2-.3.39-.25.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.13.07.71-.17 1.38z"/>
+      </svg>
+      <span>FIN nicht zur Hand? Per WhatsApp erinnern lassen</span>
+    </a>
+  </div>
+</main>
+
+<div class="funnel-foot">
+  <a href="funnel-2-registration.html" class="back-circle">‹</a>
+  <div class="scan-pill">
+    <span class="dot dot-cancel">×</span>
+    <span class="scan-lines">||||||||||</span>
+    <span class="dot dot-confirm">✓</span>
+  </div>
+</div>
+
+</body>
+</html>
